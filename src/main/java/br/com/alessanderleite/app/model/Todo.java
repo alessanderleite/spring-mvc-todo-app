@@ -20,7 +20,7 @@ public class Todo {
 	private String userName;
 	
 	@Size(min = 10, message = "Enter at least 10 Characters...")
-	private String descripiton;
+	private String description;
 	
 	private Date targetDate;
 
@@ -31,7 +31,7 @@ public class Todo {
 	public Todo(String user, String desc, Date targetDate, boolean isDone) {
 		super();
 		this.userName = user;
-		this.descripiton = desc;
+		this.description = desc;
 		this.targetDate = targetDate;
 	}
 
@@ -51,12 +51,12 @@ public class Todo {
 		this.userName = userName;
 	}
 
-	public String getDescripiton() {
-		return descripiton;
+	public String getDescription() {
+		return description;
 	}
 
-	public void setDescripiton(String descripiton) {
-		this.descripiton = descripiton;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 	public Date getTargetDate() {
