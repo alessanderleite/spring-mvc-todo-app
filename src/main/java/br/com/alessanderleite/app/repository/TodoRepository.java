@@ -7,5 +7,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import br.com.alessanderleite.app.model.Todo;
 
 public interface TodoRepository extends JpaRepository<Todo, Long> {
-	List<Todo> findUserName(String user);
+	List<Todo> findByUserName(String user);
 }
